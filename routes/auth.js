@@ -7,7 +7,7 @@ const { validarJWT } = require('../middlewares/validar-jwt');
 const router = Router();
 
 // Obtener todos
-router.get('/usuarios', validarJWT, obtenerUsuarios)
+router.get('/usuarios', obtenerUsuarios)
 
 //Crear un nuevo usuario
 router.post('/new', [
